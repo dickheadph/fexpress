@@ -30,7 +30,7 @@ function Home() {
             <h1 className="inline-block font-semibold text-white bg-red-200 rounded">
               Lorem Ipsum
             </h1>
-            <h1 className="text-7xl font-semibold text-zinc-800">
+            <h1 className="text-5xl font-semibold text-zinc-800">
               Choose your <span className="text-red-500"> Best Food </span> &
               with <span className="text-red-500"> Fastest Delivey </span>
             </h1>
