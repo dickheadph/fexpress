@@ -6,36 +6,19 @@ function Menu() {
   return (
     <div>
       <Navbar />
-        <div className="text-center my-20">
-          <ul className="flex lg:ml-[38%] ml-24">
-            <li className="mx-3 font-semibold text-red-500 hover:underline">
-              Breakfast
-            </li>
-            <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-              Lunch
-            </li>
-            <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-              Dinner
-            </li>
-            <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-              Fastfood
-            </li>
-            <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-              Beverages
-            </li>
-          </ul>
-      <div className="text-center justify-center items-center  my-4">
-        <h1 className="text-4xl font-semibold text-zinc-800">
-          Explore Our Best Foods
-        </h1>
-        <p className="text-center text-zinc-800 my-3 text-base">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          <br />
-          Voluptates magnam beatae animi quia quis officiis. Sit amet
-          consectetur adipisicing elit.
-          <br />
-          Voluptates magnam beatae animi quia quis officiis?
-        </p>
+      <div className="text-center my-20">
+        <div className="text-center justify-center items-center  my-4">
+          <h1 className="text-4xl font-semibold text-zinc-800">
+            Explore Our Best Foods
+          </h1>
+          <p className="text-center text-zinc-800 my-3 text-base">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            <br />
+            Voluptates magnam beatae animi quia quis officiis. Sit amet
+            consectetur adipisicing elit.
+            <br />
+            Voluptates magnam beatae animi quia quis officiis?
+          </p>
         </div>
       </div>
       <div className="mx-auto lg:mx-10">
@@ -60,8 +43,8 @@ function Menu() {
             See More
           </button>
         </div>
-        <Footer/>
       </div>
+        <Footer />
     </div>
   );
 }
