@@ -17,24 +17,24 @@ function Home() {
       btnOrder: "How to Order",
     },
     {
-      btnName: "Discover More",
+      btnName: "More",
       btnOrder: "Watch Video",
     },
   ];
   return (
     <div className="">
       <Navbar />
-      <div className="test max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <div className="flex">
           <div className="lg:w-6/12 w-full m-7">
-            <h1 className="inline-block font-semibold text-white bg-red-200 rounded">
+            <h1 className="inline-block font-semibold text-white bg-zinc-800 rounded">
               Lorem Ipsum
             </h1>
-            <h1 className="text-5xl font-semibold text-zinc-800">
+            <h1 className="lg:text-7xl text-4xl font-semibold text-zinc-800">
               Choose your <span className="text-red-500"> Best Food </span> &
               with <span className="text-red-500"> Fastest Delivey </span>
             </h1>
-            <p className="text-zinc-600 text-base">
+            <p className="text-zinc-600 lg:text-base my-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptates magnam beatae animi quia quis officiis? Illum quaerat
               corrupti earum reiciendis accusantium consequuntur!
@@ -48,12 +48,12 @@ function Home() {
             <img src={rider} alt="@" className="h-[80%] w-screen" />
           </div>
         </div>
-        <div className="max-w-screen-xl lg:mx-auto mx-10 mt-16">
+        <div className="max-w-screen-xl lg:mx-auto mx-10">
           <div className="text-center">
-            <h1 className="text-3xl font-semibold text-zinc-800">
+            <h1 className="lg:text-3xl text-xl font-semibold text-zinc-800">
               Why Choose Us
             </h1>
-            <p className="text-zinc-800 my-2 text-sm">
+            <p className="text-zinc-800 my-2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               <br />
               Voluptates magnam beatae animi quia quis officiis. Sit amet
@@ -63,30 +63,32 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wap lg:ml-28 mx-10">
-          <div className="w-4/12 p-10">
-            <img src={thumb} alt="@" />
-            <h1 className="text-sm font-medium py-3 mt-3">Easy to Order</h1>
-          </div>
-          <div className="w-4/12 p-10">
-            <img src={delivery} alt="@" />
-            <h1 className="text-sm font-medium py-3">Fast Delivery</h1>
-          </div>
-          <div className="w-4/12 p-10">
-            <img src={food} alt="@" />
-            <h1 className="text-sm font-medium py-3">Best Quality</h1>
+        <div className="max-w-screen-xl mx-auto my-5">
+          <div className="flex flex-wrap lg:ml-28 mx-10">
+            <div className="w-4/12">
+              <img src={thumb} alt="@" width="240px"/>
+              <h1 className="font-medium py-3 mt-3">Easy to Order</h1>
+            </div>
+            <div className="w-4/12">
+              <img src={delivery} alt="@" />
+              <h1 className="font-medium py-3">Fast Delivery</h1>
+            </div>
+            <div className="w-4/12">
+              <img src={food} alt="@"  width="341px"/>
+              <h1 className="font-medium py-3">Best Quality</h1>
+            </div>
           </div>
         </div>
       </div>
       {/* Hero Section end */}
-      <div className="max-w-screen-xl mx-auto">
+      <div className="w-screen mx-auto lg:my-20">
         <div className="flex">
           <div className="w-5/12 lg:block hidden">
-            <img src={puds} alt="@" className="w-full" />
+            <img src={puds} alt="@" className="w-full lg:h-80 object-fill" />
           </div>
-          <div className="lg:w-7/12 w-full ml-20">
+          <div className="lg:w-7/12 w-full mx-10">
             <h1 className="text-red-500 text-lg font-semibold">About</h1>
-            <h1 className="text-zinc-800 text-3xl font-semibold py-2">
+            <h1 className="text-zinc-800 lg:text-3xl text-xl font-semibold py-2">
               Our Food is The Best Food
             </h1>
             <p className="text-zinc-800 h-44 lg:h-auto overflow-auto py-3">
@@ -109,40 +111,18 @@ function Home() {
           </div>
         </div>
         {/* Menu here */}
-        <div className="text-center justify-center items-center my-20">
-          <h1 className="text-4xl font-semibold text-zinc-800">
+        <div className="lg:my-20 mt-10 mx-10">
+          <h1 className="text-center lg:text-3xl text-xl font-semibold text-zinc-800">
             Explore Our Best Foods
           </h1>
-          <p className="text-center text-zinc-800 my-3 text-base">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            <br />
-            Voluptates magnam beatae animi quia quis officiis. Sit amet
-            consectetur adipisicing elit.
-            <br />
-            Voluptates magnam beatae animi quia quis officiis?
+          <p className="text-center text-zinc-800 my-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+            magnam beatae animi quia quis officiis. Sit amet consectetur
+            adipisicing elit. Voluptates magnam beatae animi quia quis officiis?
           </p>
-          <div className="text-center my-4">
-            <ul className="flex lg:ml-[38%] ml-24">
-              <li className="mx-3 font-semibold text-red-500 hover:underline">
-                Breakfast
-              </li>
-              <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-                Lunch
-              </li>
-              <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-                Dinner
-              </li>
-              <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-                Fastfood
-              </li>
-              <li className="mx-3 font-semibold hover:text-red-500 hover:underline">
-                Beverages
-              </li>
-            </ul>
-          </div>
         </div>
-        <div className="mx-auto lg:mx-10">
-          <h1 className="mx-4 text-zinc-800 text-3xl font-semibold py-2">
+        <div className="lg:mx-5">
+          <h1 className="mx-4 text-zinc-800 lg:text-3xl text-xl font-semibold py-2">
             Category <em className="text-red-500"> One</em>
           </h1>
           <div className="flex flex-wrap mx-2">
@@ -150,38 +130,40 @@ function Home() {
             <Card />
             <Card />
           </div>
-          <h1 className="mx-4 text-zinc-800 text-3xl font-semibold pt-6">
+          <h1 className="mx-4 text-zinc-800 lg:text-3xl text-xl font-semibold py-2">
             Category <em className="text-red-500"> Two</em>
           </h1>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap mx-2">
             <Card />
             <Card />
             <Card />
           </div>
           <div className="text-center">
-            <button className="animate-bounce bg-red-200 lg:py-3 lg:px-4 lg:text-lg py-2 px-3 lg:text-base font-semibold text-red-500 rounded-full mt-10 text-center">
+            <button className="animate-bounce bg-red-200 lg:py-3 lg:px-4 lg:text-lg py-2 px-3 font-semibold text-red-500 rounded-full mt-10 text-center">
               See More
             </button>
           </div>
         </div>
       </div>
       {/* Testimonial Section */}
-      <div className="max-w-screen-lg mx-auto my-24">
+      <div className="max-w-screen-lg mx-auto lg:my-24 my-10">
         <div className="flex mx-10">
           <div className="w-5/12 bg-red-500 rounded-t-3xl lg:block hidden">
             <img src={Chef} alt="@" className="h-auto mt-20" width="900px" />
           </div>
           <div className="lg:w-7/12 w-full lg:ml-10">
-            <h1 className="text-red-500 text-lg font-semibold">Testimonials</h1>
-            <h1 className="text-zinc-800 text-3xl font-semibold py-2">
+            <h1 className="text-red-500 lg:text-lg font-semibold">
+              Testimonials
+            </h1>
+            <h1 className="text-zinc-800 lg:text-3xl text-xl font-semibold py-2">
               What our Costumers Says
             </h1>
-            <p className="text-zinc-800 h-44 lg:h-auto overflow-auto pt-3 text-lg">
+            <p className="text-zinc-800 h-44 lg:h-auto overflow-auto pt-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
               doloremque amet.
             </p>
-            <div className="border-[1px] border-zinc-700 rounded-t-xl w-auto h-76 bg-red-50 my-2">
+            <div className="border-[1px] border-zinc-700 rounded-t-xl w-auto h-76 bg-red-50">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -225,12 +207,12 @@ function Home() {
       </div>
       {/* Download Our app Section */}
       <div className="max-w-screen-xl lg:mx-auto">
-        <div className="flex bg-red-100 py-4 px-6 rounded-3xl mb-10 mx-10">
-          <div className="lg:w-6/12 w-full p-5 mt-10">
-            <h1 className="text-zinc-800 text-4xl font-semibold">
+        <div className="flex flex-wrap bg-red-100 py-4 px-6 rounded-3xl mb-10 mx-10">
+          <div className="lg:w-6/12 mt-10">
+            <h1 className="text-zinc-800 lg:text-4xl text-xl font-semibold">
               Download Our App for FREE!
             </h1>
-            <p className="text-zinc-800 h-44 overflow-hidden lg:h-auto text-base pt-3">
+            <p className="text-zinc-800 overflow-hidden lg:h-auto pt-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
               doloremque amet.
@@ -250,7 +232,7 @@ function Home() {
               Apple Store
             </button>
           </div>
-          <div className="lg:w-6/12 w-full lg;pl-20">
+          <div className="lg:w-6/12 w-full lg:pl-20 pt-4">
             <img
               src={App}
               alt="@"
@@ -261,12 +243,12 @@ function Home() {
       </div>
       {/* Food news Section */}
       <div className="max-w-screen-xl mx-auto">
-        <div className="text-center justify-center items-center my-20">
-          <h1 className="text-red-500 text-lg font-semibold">News</h1>
-          <h1 className="text-4xl font-semibold text-zinc-800">
+        <div className="text-center justify-center items-center lg:my-20 my-10 mx-10">
+          <h1 className="text-red-500 lg:text-lg font-semibold">News</h1>
+          <h1 className="lg:text-4xl text-xl font-semibold text-zinc-800">
             Explore Our Food News
           </h1>
-          <p className="text-center text-zinc-800 my-3 text-base">
+          <p className="text-center text-zinc-800 my-3">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
             magnam beatae animi quia quis officiis. <br />
             Sit amet consectetur adipisicing elit. Voluptates magnam beatae
