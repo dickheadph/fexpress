@@ -4,12 +4,12 @@ import SideBar from "./SideBar";
 
 function Navbar() {
   return (
-    <div className="pt-5">
-      <div className="flex max-w-screen-xl py-6 lg:space-x-[30%] mx-auto">
+    <div className="lg:py-5 pt-2 w-screen mx-auto">
+      <div className="flex my-6 lg:space-x-[40%]">
         {/* Logo image here 
       <img src={logo} alt="" className="w-32 h-auto ml-10" />*/}
         <Link to={"/"}>
-          <h1 className="ml-10 font-bold text-3xl pt-3 text-red-500">
+          <h1 className="lg:ml-20 ml-8 font-bold lg:text-3xl text-xl text-red-500">
             Food/<span className="mt-3 text-zinc-700">Express</span>
           </h1>
         </Link>
@@ -98,7 +98,7 @@ function Navbar() {
             </button>
           </ul>
         </div>
-        {/* <SideBar /> */}
+        <SideBar />
       </div>
     </div>
   );
