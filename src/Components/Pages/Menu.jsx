@@ -1,4 +1,4 @@
-import React, { useContext, Fragment } from "react";
+import React, { useContext} from "react";
 import { motion } from "framer-motion";
 import Navbar from "../Navbar";
 import Card from "../Card";
@@ -15,8 +15,9 @@ function Menu() {
     getMenu();
   }, [getMenu]);
   return (
-    <Fragment>
+    <>
       <Navbar />
+<<<<<<< HEAD
       <motion.div
         className="text-center mb-10"
         initial={{
@@ -36,10 +37,23 @@ function Menu() {
             Explore Our Best Foods
           </h1>
           <p className="text-center text-zinc-800 my-3 lg:text-base text-sm">
+=======
+      <div className="text-center my-20">
+        <div className="text-center justify-center items-center  my-4">
+          <h1 className="text-4xl font-semibold text-zinc-800">
+            Explore Our Best Foods
+          </h1>
+          <p className="text-center text-zinc-800 my-3 text-base">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             <br />
             Voluptates magnam beatae animi quia quis officiis. Sit amet
             consectetur adipisicing elit.
+<<<<<<< HEAD
+=======
+            <br />
+            Voluptates magnam beatae animi quia quis officiis?
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
           </p>
         </div>
       </motion.div>
@@ -83,10 +97,28 @@ function Menu() {
             </ul>
           )}
         </div>
+<<<<<<< HEAD
         <Category />
       </motion.div>
-      <Footer />
-    </Fragment>
+=======
+        <h1 className="mx-4 text-zinc-800 text-3xl font-semibold pt-6">
+          Category <em className="text-red-500"> Two</em>
+        </h1>
+        <div className="flex flex-wrap">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <div className="text-center">
+          <button className="animate-bounce bg-red-200 lg:py-3 lg:px-4 lg:text-lg py-2 px-3 lg:text-base font-semibold text-red-500 rounded-full mt-10 text-center">
+            See More
+          </button>
+        </div>
+      </div>
+        <Footer />
+    </div>
+    </>
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
   );
 }
 

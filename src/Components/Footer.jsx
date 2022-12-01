@@ -10,13 +10,21 @@ import {
 
 function Footer() {
   return (
+<<<<<<< HEAD
     <div className="w-full bg-black/80 lg:p-10 mt-5">
+=======
+    <div className="w-screen bg-black/80 lg:p-10 mt-5">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
       <div className="flex flex-wrap text-white p-6">
         <div className="lg:w-4/12 w-2/4 lg:px-2">
           <h1 className="text-white lg:text-2xl text-lg font-semibold mb-3">
             Fastest<span className="text-red-500"> Food</span>
           </h1>
+<<<<<<< HEAD
           <p className="lg:text-base text-xs">
+=======
+          <p className="lg:text-base text-sm">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
             Lorem ipsum dolor sit amet co10tetur adipisicing elit. Sed excepturi
             vitae ullam quia dolor sit amet co10tetur adipisicing elit. Sed
             excepturi vitae ullam quia.
@@ -27,28 +35,40 @@ function Footer() {
               size="xl"
               className="mx-2"
               color="red"
+<<<<<<< HEAD
               fade={true}
+=======
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
             />
             <FontAwesomeIcon
               icon={faCircle}
               size="xl"
               className="mx-2"
               color="red"
+<<<<<<< HEAD
               fade={true}
+=======
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
             />
             <FontAwesomeIcon
               icon={faCircle}
               size="xl"
               className="mx-2"
               color="red"
+<<<<<<< HEAD
               fade={true}
+=======
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
             />
             <FontAwesomeIcon
               icon={faCircle}
               size="xl"
               className="mx-2"
               color="red"
+<<<<<<< HEAD
               fade={true}
+=======
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
             />
           </div>
         </div>
@@ -56,27 +76,45 @@ function Footer() {
           <h1 className="text-white lg:text-2xl text-lg font-semibold mb-3">
             Contact<span className="text-red-500"> Us</span>
           </h1>
+<<<<<<< HEAD
           <ul className="ml-3 lg:text-base text-xs">
             <a href="@">
               <li className="my-3">
+=======
+          <ul className="ml-3 lg:text-base text-sm">
+            <a href="@">
+              <li className="my-2">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
                 <FontAwesomeIcon icon={faPhone} size="lg" />
                 &nbsp; +63 123456789
               </li>
             </a>
             <a href="@">
+<<<<<<< HEAD
               <li className="my-3">
+=======
+              <li className="my-2">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
                 <FontAwesomeIcon icon={faEnvelope} size="lg" />
                 &nbsp; jhondoe@gmail.com
               </li>
             </a>
             <a href="@">
+<<<<<<< HEAD
               <li className="my-3">
+=======
+              <li className="my-2">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
                 <FontAwesomeIcon icon={faLocationDot} size="lg" />
                 &nbsp; 916 Kansas City Misouri, 15th Ave.
               </li>
             </a>
             <a href="@">
+<<<<<<< HEAD
               <li className="my-3">
+=======
+              <li className="my-2">
+>>>>>>> eb89713ca73bbc863a63fb788b501810d1f98e62
                 <FontAwesomeIcon icon={faClock} size="lg" />
                 &nbsp; 24 Hours / Regular
               </li>
@@ -86,8 +124,9 @@ function Footer() {
         <div className="lg:w-1/12 w-2/4 lg:px-2">
           <h1 className="text-white lg:text-2xl text-lg font-semibold mb-3">
             Quick<span className="text-red-500"> Links</span>
-          </h1>
-          <ul className="m-2 lg:text-base text-xs">
+            </h1> 
+          <div>
+          <ul className="m-2 lg:text-base text-sm">
             <a href="@">
               <li>Home</li>
             </a>
@@ -112,7 +151,8 @@ function Footer() {
           <h1 className="text-white lg:text-2xl text-lg font-semibold mb-3">
             News<span className="text-red-500"> Letter</span>
           </h1>
-          <p className="lg:text-base text-xs mb-6">
+          <div className="lg:text-base text-xs mb-6">
+          <p className="lg:text-base text-sm mb-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
             excepturi vitae ullam quia.
           </p>
@@ -142,10 +182,11 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-center text-white lg:text-base text-sm mt-3 pb-3">
+      <div className="text-center text-white lg:text-base text-sm mt-3 pb-3">
+      <p className="text-center text-white lg:text-base my-3">
         All Rights Reserved &copy; Shan Carl Belgica
       </p>
-    </div>
+  </div>
   );
 }
 
