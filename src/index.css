@@ -5,3 +5,9 @@
 .App {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
+.radio {
+  @apply py-1 px-3 rounded-full border-[2px] border-orange-500 m-1;
+}
+.button {
+  @apply md:text-sm text-xs text-zinc-800 md:py-2 md:px-3 py-1 px-2 m-1 border-[1px] border-orange-500 rounded-full focus:bg-orange-400 focus:text-white;
+}

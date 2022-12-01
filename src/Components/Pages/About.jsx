@@ -3,21 +3,48 @@ import Navbar from "../Navbar";
 import puds from "../images/puds.png";
 import Chef from "../images/chef.png";
 import Footer from "../Footer";
+import { motion } from "framer-motion";
 function About() {
   return (
-    <div>
+    <div className="">
       <Navbar />
-      <div className="max-w-screen-xl mx-auto">
-        <div className="flex">
-          <div className="w-5/12 lg:m-0 mt-16">
-            <img src={puds} alt="@" className="w-full" />
-          </div>
-          <div className="w-7/12 ml-20">
-            <h1 className="text-red-500 text-lg font-semibold  pt-20">About</h1>
-            <h1 className="text-zinc-800 text-4xl font-semibold py-2">
+      <div className="max-w-screen mx-10">
+        <motion.div
+          className="flex"
+          initial={{
+            x: -500,
+          }}
+          animate={{
+            x: 0,
+          }}
+          transition={{
+            type: "spring",
+          }}
+        >
+          <div className="lg:w-7/12 lg:ml-20">
+            <h1 className="text-red-500 text-lg font-semibold lg:pt-20 mt-10">
+              About
+            </h1>
+            <h1 className="text-zinc-800 lg:text-4xl text-xl font-semibold">
               Why Our Food is The Best
             </h1>
-            <p className="text-zinc-800 h-44 lg:h-auto overflow-auto py-3">
+            <p className="text-zinc-800 lg:h-auto md:text-base text-sm overflow-auto py-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
+              doloremque amet. Nostrum quidem voluptate incidunt aspernatur
+              voluptas quo, tempore optio cumque? Dolores, quis dicta illo atque
+              vel similique reiciendis quae, amet cumque, odit sapiente et
+              tempora. Culpa repellendus, ab, itaque eum consequuntur delectus
+              sint blanditiis ea sed tempora voluptate temporibus maiores.
+              Assumenda esse fuga officiis a exercitationem, enim vero rerum
+              consectetur perspiciatis, corrupti adipisci cumque eligendi itaque
+              harum sunt numquam vel doloremque provident natus reprehenderit!
+              Odit fuga laborum illo saepe corrupti.
+            </p>
+            <h1 className="text-zinc-800 lg:text-4xl text-xl font-semibold">
+              Why Our Food is The Best
+            </h1>
+            <p className="md:text-base text-sm text-zinc-800 lg:h-auto overflow-auto py-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
               doloremque amet. Nostrum quidem voluptate incidunt aspernatur
@@ -31,7 +58,10 @@ function About() {
               Odit fuga laborum illo saepe corrupti.
             </p>
           </div>
-        </div>
+          <div className="lg:block hidden lg:w-3/12 w-full my-16">
+            <img src={puds} alt="@" className="w-full" />
+          </div>
+        </motion.div>
       </div>
       <div className="max-w-screen-lg mx-auto my-24">
         <div className="flex mx-10">
@@ -40,10 +70,10 @@ function About() {
           </div>
           <div className="lg:w-7/12 w-full lg:ml-10">
             <h1 className="text-red-500 text-lg font-semibold">Testimonials</h1>
-            <h1 className="text-zinc-800 text-4xl font-semibold py-2">
+            <h1 className="text-zinc-800 md:text-4xl text-xl font-semibold py-2">
               What our Costumers Says
             </h1>
-            <p className="text-zinc-800 h-44 lg:h-auto overflow-auto pt-3 text-lg">
+            <p className="text-zinc-800 h-44 lg:h-auto overflow-auto pt-3 text-sm">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
               doloremque amet.
@@ -68,7 +98,7 @@ function About() {
                   color="#b18686"
                 ></path>{" "}
               </svg>
-              <p className="p-5 text-base">
+              <p className="p-5 md:text-base text-sm">
                 Nostrum quidem voluptate incidunt aspernatur voluptas quo,
                 tempore optio cumque? Dolores, quis dicta illo atque vel
                 similique reiciendis quae, amet cumque, odit sapiente et
@@ -90,14 +120,32 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen mx-10">
         <div className="flex">
-          <div className="w-7/12 ml-20">
-            <h1 className="text-red-500 text-lg font-semibold pt-20">About</h1>
-            <h1 className="text-zinc-800 text-4xl font-semibold">
+          <div className="lg:w-7/12 w-auto lg:ml-20">
+            <h1 className="text-red-500 text-lg font-semibold lg:pt-20">
+              About
+            </h1>
+            <h1 className="text-zinc-800 lg:text-4xl text-xl font-semibold">
               Why Our Food is The Best
             </h1>
-            <p className="text-zinc-800 h-44 lg:h-auto overflow-auto py-3">
+            <p className="text-zinc-800 lg:h-auto md:text-base text-sm overflow-auto py-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
+              doloremque amet. Nostrum quidem voluptate incidunt aspernatur
+              voluptas quo, tempore optio cumque? Dolores, quis dicta illo atque
+              vel similique reiciendis quae, amet cumque, odit sapiente et
+              tempora. Culpa repellendus, ab, itaque eum consequuntur delectus
+              sint blanditiis ea sed tempora voluptate temporibus maiores.
+              Assumenda esse fuga officiis a exercitationem, enim vero rerum
+              consectetur perspiciatis, corrupti adipisci cumque eligendi itaque
+              harum sunt numquam vel doloremque provident natus reprehenderit!
+              Odit fuga laborum illo saepe corrupti.
+            </p>
+            <h1 className="text-zinc-800 md:text-4xl text-xl font-semibold">
+              Why Our Food is The Best
+            </h1>
+            <p className="md:text-base text-sm text-zinc-800 lg:h-auto overflow-auto py-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Assumenda, fugit? Odio sed hic repudiandae, dicta vel nisi quaerat
               doloremque amet. Nostrum quidem voluptate incidunt aspernatur
@@ -111,12 +159,12 @@ function About() {
               Odit fuga laborum illo saepe corrupti.
             </p>
           </div>
-          <div className="w-5/12 lg:m-0 mt-16">
+          <div className="lg:block hidden lg:w-3/12 w-full my-16">
             <img src={puds} alt="@" className="w-full" />
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

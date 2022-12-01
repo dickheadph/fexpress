@@ -1,0 +1,6 @@
+.box {
+  @apply bg-red-500 h-28 w-28 rounded-full text-center;
+}
+.input {
+  @apply w-[224px] bg-slate-100 p-2 mx-2 rounded outline-none border-none;
+}
