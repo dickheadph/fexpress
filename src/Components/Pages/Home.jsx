@@ -71,7 +71,7 @@ function Home() {
             </h1>
             <h1 className="lg:text-7xl text-4xl font-semibold text-zinc-800">
               Choose your <span className="text-red-500"> Best Food </span> &
-              with <span className="text-red-500"> Fastest Delivery </span>
+              with <span className="text-red-500"> Fastest DeliveryXX </span>
             </h1>
         <div 
             <p className="text-zinc-600 lg:text-base text-sm my-3">
